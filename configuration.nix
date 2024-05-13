@@ -27,9 +27,12 @@
           htop
           neovim
           python311
+          python311Packages.pip
           nodejs_22
           poetry
           tmux
+          wget
+          tree-sitter
         ];
     # Fonts
     fonts = {

@@ -52,9 +52,11 @@
 
   programs.kitty = {
     enable = true;
-    theme = "Catppuccin-Mocha";
-    font.name = "FantasqueSansMono";
+    theme = "Rosé Pine Moon";
+    font.name = "FantasqueSansM Nerd Font";
     font.size = 18;
+    extraConfig = ''
+    '';
   };
 
   programs.zsh = {
