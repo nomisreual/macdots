@@ -35,6 +35,20 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
   ];
+  # Git
+  programs.git = {
+    enable = true;
+    userName = "Simon Antonius Lauer";
+    userEmail = "simon.lauer@posteo.de";
+    extraConfig = {
+      init = {
+        defaultbranch = "main";
+      };
+      core = {
+        editor = "nvim";
+      };
+    };
+  };
 
   programs.kitty = {
     enable = true;
