@@ -47,6 +47,7 @@
       homebrew = {
         enable = true;
         casks = [
+          "protonvpn"
           "google-chrome"
           "docker"
           "1password"
