@@ -47,6 +47,7 @@
       homebrew = {
         enable = true;
         casks = [
+          "google-chrome"
           "docker"
           "1password"
           "dbeaver-community"
