@@ -35,6 +35,16 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
   ];
+
+  # zoxide
+  programs.zoxide = {
+    enable = true;
+    enableZshIntegration = true;
+    options = [
+      "--cmd cd"
+    ];
+  };
+
   # Git
   programs.git = {
     enable = true;
