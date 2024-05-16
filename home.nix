@@ -17,7 +17,8 @@
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
-  home.packages = [
+  home.packages = with pkgs; [
+    pipx
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -73,6 +74,7 @@
     enable = true;
     initExtra = ''
       export PATH="/usr/local/opt/postgresql@16/bin:$PATH"
+      export PATH="/Users/simon/.local/bin:$PATH"
     '';
   };
 
