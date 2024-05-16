@@ -47,6 +47,7 @@
       homebrew = {
         enable = true;
         casks = [
+          "visual-studio-code"
           "protonvpn"
           "google-chrome"
           "docker"
