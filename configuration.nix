@@ -23,6 +23,7 @@
 
       environment.systemPackages =
         with pkgs; [
+          nh
           vim
           htop
           neovim
