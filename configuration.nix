@@ -34,35 +34,33 @@
           tmux
           wget
           tree-sitter
+          gnupg
         ];
     # Fonts
-    fonts = {
-      fontDir.enable = true;
-      fonts = with pkgs; [
+    fonts.packages = with pkgs; [
         (nerdfonts.override {fonts = ["FantasqueSansMono" "Hack"];})
         font-awesome_5
-      ];
-    };
+    ];
+
 
       # Homebrew
       homebrew = {
         enable = true;
         casks = [
           "visual-studio-code"
-          "protonvpn"
           "google-chrome"
           "docker"
           "1password"
           "dbeaver-community"
           "kitty"
           "slack"
+          "thunderbird"
           "zed"
           "brave-browser"
           "firefox"
           "obsidian"
           "warp"
           "brave-browser"
-          "proton-drive"
           "pdf-expert"
         ];
         brews = [
